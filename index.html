@@ -15,7 +15,7 @@
         .hero-container {
             background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
             color: #ffffff;
-            padding: 5rem 2rem 3rem 2rem;
+            padding: 5rem 2rem 4rem 2rem;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -32,6 +32,11 @@
         .hero-text .oab { color: #94a3b8; font-size: 1rem; margin-bottom: 1.5rem; display: block; }
         .hero-text p { font-size: 1.1rem; color: #cbd5e1; margin-bottom: 2rem; }
         
+        /* Redes Sociais no Hero */
+        .hero-socials { display: flex; gap: 1rem; margin-bottom: 2rem; }
+        .hero-socials a { color: #cbd5e1; font-size: 1.3rem; transition: color 0.3s; }
+        .hero-socials a:hover { color: #c5a880; }
+
         /* Botão WhatsApp */
         .btn-whatsapp {
             display: inline-flex;
@@ -132,42 +137,42 @@
         .article-link { color: #1e293b; text-decoration: none; font-weight: 600; font-size: 0.95rem; display: inline-flex; align-items: center; gap: 0.5rem; transition: color 0.3s; }
         .article-link:hover { color: #c5a880; }
 
-        /* Seção Contato */
+        /* Seção Contato Simplificada (Digital) */
         .contact-section { background-color: #f1f5f9; padding: 6rem 2rem; }
-        .contact-container { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1.2fr; gap: 4rem; }
-        .contact-info h2 { font-size: 2.2rem; color: #1e293b; margin-bottom: 1.5rem; }
-        .contact-info p { color: #64748b; margin-bottom: 2.5rem; font-size: 1.05rem; }
-        .contact-details { display: flex; flex-direction: column; gap: 2rem; }
-        .contact-item { display: flex; gap: 1rem; align-items: flex-start; }
-        .contact-item i { color: #c5a880; font-size: 1.4rem; background: #ffffff; padding: 0.8rem; border-radius: 4px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); }
-        .contact-item h4 { font-size: 1.1rem; color: #1e293b; margin-bottom: 0.2rem; }
-        .contact-item p { color: #64748b; font-size: 0.95rem; margin-bottom: 0; }
-        .contact-map { width: 100%; height: 100%; min-height: 350px; border-radius: 6px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); }
-        .contact-map iframe { width: 100%; height: 100%; border: 0; min-height: 350px; }
+        .contact-container { max-width: 800px; margin: 0 auto; text-align: center; }
+        .contact-container h2 { font-size: 2.2rem; color: #1e293b; margin-bottom: 1.5rem; }
+        .contact-container p { color: #64748b; margin-bottom: 3rem; font-size: 1.05rem; }
+        .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2rem; margin-bottom: 3rem; }
+        .contact-card { background: #ffffff; padding: 2rem; border-radius: 6px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); }
+        .contact-card i { color: #c5a880; font-size: 2rem; margin-bottom: 1rem; }
+        .contact-card h4 { font-size: 1.1rem; color: #1e293b; margin-bottom: 0.5rem; }
+        .contact-card p { color: #64748b; font-size: 0.95rem; margin-bottom: 0; }
+        .contact-card a { color: #64748b; text-decoration: none; transition: color 0.3s; }
+        .contact-card a:hover { color: #c5a880; }
 
         /* Rodapé */
         .footer { background-color: #0f172a; color: #94a3b8; padding: 4rem 2rem 2rem 2rem; border-top: 4px solid #c5a880; }
         .footer-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 2rem; border-bottom: 1px solid #334155; padding-bottom: 2rem; margin-bottom: 2rem; }
         .footer-logo h3 { color: #ffffff; font-size: 1.4rem; margin-bottom: 0.2rem; }
         .footer-logo span { color: #c5a880; font-size: 0.9rem; letter-spacing: 1px; }
-        .footer-nav a { color: #94a3b8; text-decoration: none; margin-left: 2rem; transition: color 0.3s; font-size: 0.95rem; }
-        .footer-nav a:hover { color: #ffffff; }
+        .footer-socials { display: flex; gap: 1.5rem; }
+        .footer-socials a { color: #94a3b8; font-size: 1.3rem; transition: color 0.3s; }
+        .footer-socials a:hover { color: #ffffff; }
         .footer-copy { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; font-size: 0.85rem; }
 
         /* Responsividade Celular */
         @media (max-width: 768px) {
             .hero-content { grid-template-columns: 1fr; gap: 2.5rem; text-align: center; }
             .hero-text h1 { font-size: 2.2rem; }
+            .hero-socials { justify-content: center; }
             .indicators-grid { grid-template-columns: 1fr; gap: 1.5rem; }
             .solutions-container, .about-section, .why-section, .process-section, .articles-section, .contact-section { padding: 4rem 1rem; }
-            .solutions-header h2, .about-text h2, .why-text h2, .process-header h2, .articles-header h2, .contact-info h2 { font-size: 1.8rem; }
-            .about-container, .why-grid, .contact-container { grid-template-columns: 1fr; gap: 3rem; }
+            .solutions-header h2, .about-text h2, .why-text h2, .process-header h2, .articles-header h2, .contact-container h2 { font-size: 1.8rem; }
+            .about-container, .why-grid { grid-template-columns: 1fr; gap: 3rem; }
             .about-image::before { display: none; }
             .why-text h2 { text-align: center; }
             .why-features { margin-top: 0 !important; }
-            .contact-map { min-height: 300px; }
             .footer-container { flex-direction: column; text-align: center; }
-            .footer-nav a { margin: 0 1rem; display: inline-block; }
             .footer-copy { flex-direction: column; text-align: center; }
         }
     </style>
@@ -182,7 +187,17 @@
                 <h1>FABRÍCIO GOMES PAIXÃO</h1>
                 <span class="oab">OAB/SP 275.676</span>
                 <p>Defesa jurídica estratégica para pessoas físicas e empresas, com atuação pautada pela ética, excelência técnica e soluções eficazes para a proteção dos direitos de seus clientes.</p>
-                <a href="https://wa.me/SEUNUMERODOWHATSAPP" target="_blank" class="btn-whatsapp">
+                
+                <!-- Ícones de Redes Sociais -->
+                <div class="hero-socials">
+                    <a href="https://www.instagram.com/fgomespaixao/?igshid=NGExMmI2YTkyZg%3D%3D" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/people/fgomespaixao/100095196938979/?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://x.com/drfabriciogomes" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.youtube.com/@dr.fabriciopaixao" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="https://www.tiktok.com/@dr.fabricio.paixao?_r=1&_t=ZS-96ehX6K3wKj" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+
+                <a href="https://wa.me/5515981033813" target="_blank" class="btn-whatsapp">
                     <i class="fa-brands fa-whatsapp"></i> Agendar Consulta pelo WhatsApp
                 </a>
             </div>
@@ -235,7 +250,7 @@
             <div class="solution-card">
                 <div class="solution-icon"><i class="fa-solid fa-cart-shopping"></i></div>
                 <h3>Direito do Consumidor</h3>
-                <p>Defesa dos direitos em relações de consumo, práticas abusivas, indenizaciones e cumprimento de contratos de prestação de serviços.</p>
+                <p>Defesa dos direitos em relações de consumo, práticas abusivas, indenizações e cumprimento de contratos de prestação de serviços.</p>
             </div>
             <div class="solution-card">
                 <div class="solution-icon"><i class="fa-solid fa-user-tie"></i></div>
@@ -374,7 +389,7 @@
                     <span class="article-tag">Empresarial</span>
                     <h3>A Importância da Advocacia Preventiva nas Empresas</h3>
                     <p>Entenda como uma consultoria minuciosa mitiga riscos trabalhistas, contratuais e societários, economizando tempo e recursos.</p>
-                    <a href="https://wa.me/SEUNUMERODOWHATSAPP" target="_blank" class="article-link">Ler artigo completo <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="https://wa.me/5515981033813" target="_blank" class="article-link">Ler artigo completo <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
             <div class="article-card">
@@ -383,46 +398,39 @@
                     <span class="article-tag">Penal / Processual</span>
                     <h3>Recursos e Tribunais: A Força da Sustentação Oral</h3>
                     <p>Saiba por que a presença combativa do advogado de defesa nos tribunais de segunda instância faz toda a diferença para reverter decisões.</p>
-                    <a href="https://wa.me/SEUNUMERODOWHATSAPP" target="_blank" class="article-link">Ler artigo completo <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="https://wa.me/5515981033813" target="_blank" class="article-link">Ler artigo completo <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- SEÇÃO CONTATO -->
+    <!-- SEÇÃO CONTATO (DIGITAL) -->
     <section class="contact-section">
         <div class="contact-container">
-            <div class="contact-info">
-                <h2>Fale Conosco</h2>
-                <p>Estamos prontos para atender sua demanda com o sigilo, a pressa e o rigor técnico que o seu caso exige.</p>
-                <div class="contact-details">
-                    <div class="contact-item">
-                        <i class="fa-solid fa-phone"></i>
-                        <div>
-                            <h4>Telefone / WhatsApp</h4>
-                            <p>(11) 99999-9999</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fa-solid fa-envelope"></i>
-                        <div>
-                            <h4>E-mail</h4>
-                            <p>contato@fpadvocacia.com.br</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <div>
-                            <h4>Endereço</h4>
-                            <p>Atendimento Presencial e Digital para todo o Brasil</p>
-                        </div>
-                    </div>
+            <h2>Fale Conosco</h2>
+            <p>Atendimento jurídico ágil, resolutivo e com total sigilo. Escolha o canal mais conveniente para falar diretamente conosco.</p>
+            
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <i class="fa-brand fa-whatsapp" style="color: #25d366;"></i>
+                    <h4>WhatsApp / Celular</h4>
+                    <p><a href="https://wa.me/5515981033813" target="_blank">(15) 98103-3813</a></p>
+                </div>
+                <div class="contact-card">
+                    <i class="fa-solid fa-envelope"></i>
+                    <h4>E-mail</h4>
+                    <p><a href="mailto:fabriciogomespaixao@gmail.com">fabriciogomespaixao@gmail.com</a></p>
+                </div>
+                <div class="contact-card">
+                    <i class="fa-solid fa-globe"></i>
+                    <h4>Atendimento</h4>
+                    <p>100% Digital e Presencial para todo o Brasil</p>
                 </div>
             </div>
-            <div class="contact-map">
-                <!-- Mapa Padrão de São Paulo (Você poderá substituir com o seu endereço depois) -->
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.065830006454!2d-46.6559144246695!3d-23.566061178795558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f943179a9777!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+
+            <a href="https://wa.me/5515981033813" target="_blank" class="btn-whatsapp">
+                <i class="fa-brands fa-whatsapp"></i> Iniciar Atendimento Agora
+            </a>
         </div>
     </section>
 
@@ -433,13 +441,17 @@
                 <h3>FABRÍCIO GOMES PAIXÃO</h3>
                 <span>ADVOCACIA E CONSULTORIA JURÍDICA</span>
             </div>
-            <div class="footer-nav">
-                <!-- Links institucionais caso queira criar âncoras depois -->
-                <p style="color: #64748b; font-size: 0.9rem;">OAB/SP 275.676</p>
+            <!-- Ícones Sociais do Rodapé -->
+            <div class="footer-socials">
+                <a href="https://www.instagram.com/fgomespaixao/?igshid=NGExMmI2YTkyZg%3D%3D" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/people/fgomespaixao/100095196938979/?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://x.com/drfabriciogomes" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.youtube.com/@dr.fabriciopaixao" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.tiktok.com/@dr.fabricio.paixao?_r=1&_t=ZS-96ehX6K3wKj" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
             </div>
         </div>
         <div class="footer-copy">
-            <p>&copy; 2026 Fabrício Gomes Paixão Advocacia. Todos os direitos reservados.</p>
+            <p>&copy; 2026 Fabrício Gomes Paixão Advocacia. Todos os direitos reservados. | OAB/SP 275.676</p>
             <p>Desenvolvido com foco em Proteção e Defesa Estratégica.</p>
         </div>
     </footer>
