@@ -53,21 +53,25 @@
         .btn-whatsapp i { margin-right: 10px; font-size: 1.3rem; }
         .btn-whatsapp:hover { background-color: #20ba5a; }
 
-        /* Imagem do Hero - Ajustada para preencher sem fundo branco */
+        /* Máscara criada para esconder o espaço em branco nativo da imagem original */
         .hero-image { 
-            text-align: center; 
             display: flex;
             justify-content: center;
-        }
-        .hero-image img {
+            align-items: flex-start;
             width: 100%;
-            max-width: 450px;
-            height: 550px;
-            object-fit: cover;
-            object-position: center top;
+            max-width: 440px;
+            height: 510px; /* Corta cirurgicamente onde o espaço branco começa */
+            overflow: hidden; /* Esconde tudo o que passar dessa altura */
             border-radius: 8px;
             border-bottom: 6px solid #c5a880;
             box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+            margin: 0 auto;
+        }
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: contain;
         }
 
         /* Indicadores */
@@ -172,7 +176,7 @@
             .hero-content { grid-template-columns: 1fr; gap: 2.5rem; text-align: center; }
             .hero-text h1 { font-size: 2.2rem; }
             .hero-socials { justify-content: center; }
-            .hero-image img { height: 420px; } /* Ajuste de altura proporcional para o mobile */
+            .hero-image { max-width: 340px; height: 390px; } /* Proporção ideal adaptada para telas menores */
             .indicators-grid { grid-template-columns: 1fr; gap: 1.5rem; }
             .solutions-container, .about-section, .why-section, .process-section, .articles-section, .contact-section { padding: 4rem 1rem; }
             .solutions-header h2, .about-text h2, .why-text h2, .process-header h2, .articles-header h2, .contact-container h2 { font-size: 1.8rem; }
@@ -210,7 +214,7 @@
                 </a>
             </div>
             
-            <!-- Foto Oficial com Correção de Proporção Inteligente -->
+            <!-- Foto Oficial com Recorte de Segurança Inteligente -->
             <div class="hero-image">
                 <img src="https://i.ibb.co/rGMdkNDG/Sem-t-tulo.jpg" alt="Dr. Fabrício Gomes Paixão">
             </div>
@@ -305,7 +309,7 @@
                 <span class="subtitle">Experiência e Dedicação</span>
                 <h2>Dr. Fabrício Gomes Paixão</h2>
                 <p>Com uma sólida trajetória pautada pela <strong>ética, rigor técnico e foco em resultados</strong>, o Dr. Fabrício Gomes Paixão atua de forma estratégica para garantir a máxima proteção jurídica aos seus constituintes.</p>
-                <p>O escritório compreende que cada caso é único. Por isso, o compromisso central é entregar um <strong>atendimento altamente personalizado</strong>, traduzindo a complexidade das leis in soluções claras, ágeis e seguras para pessoas físicas e jurídicas.</p>
+                <p>O escritório compreende que cada caso é único. Por isso, o compromisso central é entregar um <strong>atendimento altamente personalizado</strong>, traduzindo a complexidade das leis em soluções claras, ágeis e seguras para pessoas físicas e jurídicas.</p>
                 <p>Seja na advocacia preventiva — evitando litígios e prejuízos futuros —, ou no contencioso de alta complexidade, a atuação é focada em mitigar riscos e assegurar a defesa intransigente dos direitos dos clientes.</p>
             </div>
         </div>
@@ -316,7 +320,7 @@
         <div class="why-grid">
             <div class="why-text">
                 <h2>Por que escolher nosso escritório?</h2>
-                <p style="color: #64748b; margin-bottom: 2rem;">Buscamos a excelência em cada detalhe, unindo o profundo conhecimento legal a uma postura combativa e transparente.</p>
+                <p style="color: #64748b; margin-bottom: 2rem;">Buscamos a excellence em cada detalhe, unindo o profundo conhecimento legal a uma postura combativa e transparente.</p>
                 <div class="why-features">
                     <div class="why-feature-item">
                         <i class="fa-solid fa-scale-balanced"></i>
