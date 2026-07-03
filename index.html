@@ -160,7 +160,6 @@
             display: block;
             margin: 0 auto;
         }
-        /* Detalhe estético atrás da foto */
         .about-image::before {
             content: '';
             position: absolute;
@@ -176,27 +175,32 @@
         }
         .about-image img { position: relative; z-index: 1; }
         
-        .about-text h2 {
-            font-size: 2.2rem;
-            color: #1e293b;
-            margin-bottom: 1.5rem;
-        }
-        .about-text .subtitle {
-            color: #c5a880;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 0.5rem;
-            display: block;
-        }
-        .about-text p {
-            color: #475569;
-            margin-bottom: 1.5rem;
-            font-size: 1.05rem;
-        }
-        .about-text p strong {
-            color: #1e293b;
-        }
+        .about-text h2 { font-size: 2.2rem; color: #1e293b; margin-bottom: 1.5rem; }
+        .about-text .subtitle { color: #c5a880; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem; display: block; }
+        .about-text p { color: #475569; margin-bottom: 1.5rem; font-size: 1.05rem; }
+        .about-text p strong { color: #1e293b; }
+
+        /* Seção Diferenciais (Por que escolher) */
+        .why-section { padding: 6rem 2rem; max-width: 1200px; margin: 0 auto; }
+        .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+        .why-text h2 { font-size: 2.2rem; color: #1e293b; margin-bottom: 1.5rem; }
+        .why-features { display: flex; flex-direction: column; gap: 1.5rem; }
+        .why-feature-item { display: flex; gap: 1rem; align-items: flex-start; }
+        .why-feature-item i { color: #c5a880; font-size: 1.3rem; margin-top: 0.2rem; }
+        .why-feature-item h4 { font-size: 1.1rem; color: #1e293b; margin-bottom: 0.3rem; }
+        .why-feature-item p { color: #64748b; font-size: 0.95rem; }
+
+        /* Seção Como Funciona */
+        .process-section { background-color: #0f172a; color: #ffffff; padding: 6rem 2rem; }
+        .process-header { text-align: center; margin-bottom: 4rem; }
+        .process-header h2 { font-size: 2.2rem; color: #ffffff; position: relative; padding-bottom: 1rem; }
+        .process-header h2::after { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 60px; height: 3px; background-color: #c5a880; }
+        .process-grid { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; }
+        .process-step { background-color: #1e293b; padding: 2.5rem 2rem; border-radius: 6px; text-align: center; position: relative; }
+        .process-step .step-number { position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background-color: #c5a880; color: #0f172a; width: 35px; height: 35px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.1rem; }
+        .process-step i { color: #c5a880; font-size: 2.2rem; margin-bottom: 1.5rem; margin-top: 0.5rem; display: inline-block; }
+        .process-step h3 { font-size: 1.2rem; margin-bottom: 1rem; color: #ffffff; }
+        .process-step p { color: #94a3b8; font-size: 0.95rem; }
 
         /* Responsividade Celular */
         @media (max-width: 768px) {
@@ -207,7 +211,11 @@
             .solutions-header h2 { font-size: 1.8rem; }
             .about-container { grid-template-columns: 1fr; gap: 3rem; text-align: center; }
             .about-text h2 { font-size: 1.8rem; }
-            .about-image::before { display: none; } /* Remove o quadrado de fundo no mobile para não desalinhar */
+            .about-image::before { display: none; }
+            .why-grid { grid-template-columns: 1fr; gap: 3rem; }
+            .why-text h2 { font-size: 1.8rem; text-align: center; }
+            .process-section { padding: 4rem 1rem; }
+            .process-header h2 { font-size: 1.8rem; }
         }
     </style>
 </head>
@@ -286,7 +294,7 @@
             <div class="solution-card">
                 <div class="solution-icon"><i class="fa-solid fa-user-tie"></i></div>
                 <h3>Direito do Trabalho</h3>
-                <p>Atuação focada na defesa de direitos trabalhistas, compliance patronal preventivo e representação em litígios judiciais.</p>
+                <p>Atuação focada na defense de direitos trabalhistas, compliance patronal preventivo e representação em litígios judiciais.</p>
             </div>
 
             <!-- 5. Direito Penal -->
@@ -330,7 +338,6 @@
     <section class="about-section">
         <div class="about-container">
             <div class="about-image">
-                <!-- Outra foto de suporte ou a mesma em outro ângulo no futuro -->
                 <img src="https://images.unsplash.com/photo-1436450412740-6b988f486c6b?auto=format&fit=crop&q=80&w=600" alt="Escritório Dr. Fabrício Gomes Paixão">
             </div>
             <div class="about-text">
@@ -339,6 +346,81 @@
                 <p>Com uma sólida trajetória pautada pela <strong>ética, rigor técnico e foco em resultados</strong>, o Dr. Fabrício Gomes Paixão atua de forma estratégica para garantir a máxima proteção jurídica aos seus constituintes.</p>
                 <p>O escritório compreende que cada caso é único. Por isso, o compromisso central é entregar um <strong>atendimento altamente personalizado</strong>, traduzindo a complexidade das leis em soluções claras, ágeis e seguras para pessoas físicas e jurídicas.</p>
                 <p>Seja na advocacia preventiva — evitando litígios e prejuízos futuros —, ou no contencioso de alta complexidade, a atuação é focada em mitigar riscos e assegurar a defesa intransigente dos direitos dos clientes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO POR QUE ESCOLHER -->
+    <section class="why-section">
+        <div class="why-grid">
+            <div class="why-text">
+                <h2>Por que escolher nosso escritório?</h2>
+                <p style="color: #64748b; margin-bottom: 2rem;">Buscamos a excelência em cada detalhe, unindo o profundo conhecimento legal a uma postura combativa e transparente.</p>
+                <div class="why-features">
+                    <div class="why-feature-item">
+                        <i class="fa-solid fa-scale-balanced"></i>
+                        <div>
+                            <h4>Foco em Soluções Eficazes</h4>
+                            <p>Evitamos formalidades desnecessárias para buscar saídas práticas e definitivas para o seu problema.</p>
+                        </div>
+                    </div>
+                    <div class="why-feature-item">
+                        <i class="fa-solid fa-eye"></i>
+                        <div>
+                            <h4>Transparência Absoluta</h4>
+                            <p>Informações claras sobre as reais chances do processo e atualizações constantes sobre o andamento do caso.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="why-features" style="margin-top: 4.5rem;">
+                <div class="why-feature-item">
+                    <i class="fa-solid fa-user-shield"></i>
+                    <div>
+                        <h4>Segurança Legal</h4>
+                        <p>Atuação preventiva minuciosa para blindar patrimônios, negócios e direitos antes que os conflitos aconteçam.</p>
+                    </div>
+                </div>
+                <div class="why-feature-item">
+                    <i class="fa-solid fa-clock"></i>
+                    <div>
+                        <h4>Agilidade e Disponibilidade</h4>
+                        <p>Canais de comunicação acessíveis e respostas céleres para que você nunca fique em dúvida.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO COMO FUNCIONA O ATENDIMENTO -->
+    <section class="process-section">
+        <div class="process-header">
+            <h2>Como funciona o atendimento</h2>
+        </div>
+        <div class="process-grid">
+            <div class="process-step">
+                <div class="step-number">1</div>
+                <i class="fa-brands fa-whatsapp"></i>
+                <h3>Contato Inicial</h3>
+                <p>Clique nos botões do site para iniciar um atendimento imediato e seguro via WhatsApp.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">2</div>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <h3>Análise do Caso</h3>
+                <p>Avaliamos detalhadamente os documentos e os fatos apresentados para desenhar a melhor tese.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">3</div>
+                <i class="fa-solid fa-chess-knight"></i>
+                <h3>Definição Estratégica</h3>
+                <p>Apresentamos o plano de ação ideal, seja através de acordo amigável ou medida judicial urgente.</p>
+            </div>
+            <div class="process-step">
+                <div class="step-number">4</div>
+                <i class="fa-solid fa-square-poll-vertical"></i>
+                <h3>Acompanhamento</h3>
+                <p>Execução técnica de excelência com reporte contínuo até a resolução definitiva da demanda.</p>
             </div>
         </div>
     </section>
