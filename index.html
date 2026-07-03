@@ -71,11 +71,77 @@
         .indicator-item i { color: #c5a880; font-size: 1.5rem; }
         .indicator-item span { font-weight: 600; color: #1e293b; font-size: 1.05rem; }
 
+        /* Seção Soluções Jurídicas */
+        .solutions-container {
+            padding: 6rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .solutions-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        .solutions-header h2 {
+            font-size: 2.2rem;
+            color: #1e293b;
+            position: relative;
+            padding-bottom: 1rem;
+        }
+        .solutions-header h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background-color: #c5a880;
+        }
+        .solutions-header p {
+            color: #64748b;
+            margin-top: 1rem;
+            font-size: 1.1rem;
+        }
+        .solutions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+        }
+        .solution-card {
+            background-color: #ffffff;
+            padding: 2.5rem 2rem;
+            border-radius: 6px;
+            border-top: 4px solid #1e293b;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+        }
+        .solution-card:hover {
+            transform: translateY(-5px);
+            border-top-color: #c5a880;
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+        }
+        .solution-icon {
+            color: #c5a880;
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        .solution-card h3 {
+            font-size: 1.3rem;
+            color: #1e293b;
+            margin-bottom: 1rem;
+        }
+        .solution-card p {
+            color: #64748b;
+            font-size: 0.95rem;
+        }
+
         /* Responsividade Celular */
         @media (max-width: 768px) {
             .hero-content { grid-template-columns: 1fr; gap: 2.5rem; text-align: center; }
             .hero-text h1 { font-size: 2.2rem; }
             .indicators-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+            .solutions-container { padding: 4rem 1rem; }
+            .solutions-header h2 { font-size: 1.8rem; }
         }
     </style>
 </head>
@@ -94,7 +160,6 @@
                 </a>
             </div>
             <div class="hero-image">
-                <!-- Substituiremos o link abaixo pela sua foto depois -->
                 <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=600" alt="Dr. Fabrício Gomes Paixão">
             </div>
         </div>
@@ -108,6 +173,7 @@
                 <span>Atendimento Personalizado</span>
             </div>
             <div class="indicator-item">
+                <div class="indicator-item">
                 <i class="fa-solid fa-circle-check"></i>
                 <span>Atuação Preventiva e Contenciosa</span>
             </div>
@@ -118,6 +184,79 @@
             <div class="indicator-item">
                 <i class="fa-solid fa-circle-check"></i>
                 <span>Excelência Técnica</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO SOLUÇÕES JURÍDICAS -->
+    <section class="solutions-container">
+        <div class="solutions-header">
+            <h2>Soluções Jurídicas</h2>
+            <p>Atuação especializada voltada para a segurança jurídica e a melhor resolução de conflitos.</p>
+        </div>
+        
+        <div class="solutions-grid">
+            <!-- 1. Direito Empresarial -->
+            <div class="solution-card">
+                <div class="solution-icon"><i class="fa-solid fa-briefcase"></i></div>
+                <h3>Direito Empresarial</h3>
+                <p>Assessoria consultiva e contenciosa para empresas, contratos comerciais, estruturação societária e proteção do negócio.</p>
+            </div>
+
+            <!-- 2. Direito Civil -->
+            <div class="solution-card">
+                <div class="solution-icon"><i class="fa-solid fa-gavel"></i></div>
+                <h3>Direito Civil</h3>
+                <p>Resolução de disputas, contratos, responsabilidade civil, direitos de propriedade e assessoria em relações civis em geral.</p>
+            </div>
+
+            <!-- 3. Direito do Consumidor -->
+            <div class="solution-card">
+                <div class="solution-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+                <h3>Direito do Consumidor</h3>
+                <p>Defesa dos direitos em relações de consumo, práticas abusivas, indenizações e cumprimento de contratos de prestação de serviços.</p>
+            </div>
+
+            <!-- 4. Direito do Trabalho -->
+            <div class="solution-card">
+                <div class="solution-icon"><i class="fa-solid fa-user-tie"></i></div>
+                <h3>Direito do Trabalho</h3>
+                <p>Atuação focada na defesa de direitos trabalhistas, compliance patronal preventivo e representação em litígios judiciais.</p>
+            </div>
+
+            <!-- 5. Direito Penal -->
+            <div class="solution-card">
+                <div class="solution-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <h3>Direito Penal</h3>
+                <p>Defesa criminal técnica e estratégica, acompanhamento em inquéritos policiais e processos em todas as instâncias.</p>
+            </div>
+
+            <!-- 6. Direito Militar -->
+            <div class="solution-card">
+                <div class="solution-icon"><i class="fa-solid fa-person-military-pointing"></i></div>
+                <h3>Direito Militar</h3>
+                <p>Assessoria jurídica especializada para militares, envolvendo processos disciplinares, promoções e defesas administrativas ou judiciais.</p>
+            </div>
+
+            <!-- 7. Habeas Corpus -->
+            <div class="solution-card">
+                <div class="solution-icon"><i class="fa-solid fa-unlock-keyhole"></i></div>
+                <h3>Habeas Corpus</h3>
+                <p>Medidas urgentes e eficazes para a proteção e garantia da liberdade de locomoção contra atos ilegais ou abusos de poder.</p>
+            </div>
+
+            <!-- 8. Recursos e Sustentações Orais -->
+            <div class="solution-card">
+                <div class="solution-icon"><i class="fa-solid fa-building-columns"></i></div>
+                <h3>Recursos e Sustentações Orais</h3>
+                <p>Atuação perante os Tribunais, com elaboração de recursos complexos e defesas orais estratégicas para reverter ou manter decisões.</p>
+            </div>
+
+            <!-- 9. Consultoria Jurídica -->
+            <div class="solution-card">
+                <div class="solution-icon"><i class="fa-solid fa-comments"></i></div>
+                <h3>Consultoria Jurídica</h3>
+                <p>Orientações e pareceres técnicos preventivos com o objetivo de evitar litígios judiciais e garantir segurança nas tomadas de decisão.</p>
             </div>
         </div>
     </section>
