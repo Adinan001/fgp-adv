@@ -135,6 +135,69 @@
             font-size: 0.95rem;
         }
 
+        /* Seção Quem É */
+        .about-section {
+            background-color: #f1f5f9;
+            padding: 6rem 2rem;
+        }
+        .about-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        .about-image {
+            position: relative;
+        }
+        .about-image img {
+            width: 100%;
+            max-width: 450px;
+            height: auto;
+            border-radius: 6px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            display: block;
+            margin: 0 auto;
+        }
+        /* Detalhe estético atrás da foto */
+        .about-image::before {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: 20px;
+            width: 100%;
+            max-width: 450px;
+            height: 100%;
+            border: 3px solid #c5a880;
+            border-radius: 6px;
+            z-index: 0;
+            pointer-events: none;
+        }
+        .about-image img { position: relative; z-index: 1; }
+        
+        .about-text h2 {
+            font-size: 2.2rem;
+            color: #1e293b;
+            margin-bottom: 1.5rem;
+        }
+        .about-text .subtitle {
+            color: #c5a880;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        .about-text p {
+            color: #475569;
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+        }
+        .about-text p strong {
+            color: #1e293b;
+        }
+
         /* Responsividade Celular */
         @media (max-width: 768px) {
             .hero-content { grid-template-columns: 1fr; gap: 2.5rem; text-align: center; }
@@ -142,6 +205,9 @@
             .indicators-grid { grid-template-columns: 1fr; gap: 1.5rem; }
             .solutions-container { padding: 4rem 1rem; }
             .solutions-header h2 { font-size: 1.8rem; }
+            .about-container { grid-template-columns: 1fr; gap: 3rem; text-align: center; }
+            .about-text h2 { font-size: 1.8rem; }
+            .about-image::before { display: none; } /* Remove o quadrado de fundo no mobile para não desalinhar */
         }
     </style>
 </head>
@@ -173,7 +239,6 @@
                 <span>Atendimento Personalizado</span>
             </div>
             <div class="indicator-item">
-                <div class="indicator-item">
                 <i class="fa-solid fa-circle-check"></i>
                 <span>Atuação Preventiva e Contenciosa</span>
             </div>
@@ -257,6 +322,23 @@
                 <div class="solution-icon"><i class="fa-solid fa-comments"></i></div>
                 <h3>Consultoria Jurídica</h3>
                 <p>Orientações e pareceres técnicos preventivos com o objetivo de evitar litígios judiciais e garantir segurança nas tomadas de decisão.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO QUEM É O DR. FABRÍCIO -->
+    <section class="about-section">
+        <div class="about-container">
+            <div class="about-image">
+                <!-- Outra foto de suporte ou a mesma em outro ângulo no futuro -->
+                <img src="https://images.unsplash.com/photo-1436450412740-6b988f486c6b?auto=format&fit=crop&q=80&w=600" alt="Escritório Dr. Fabrício Gomes Paixão">
+            </div>
+            <div class="about-text">
+                <span class="subtitle">Experiência e Dedicação</span>
+                <h2>Dr. Fabrício Gomes Paixão</h2>
+                <p>Com uma sólida trajetória pautada pela <strong>ética, rigor técnico e foco em resultados</strong>, o Dr. Fabrício Gomes Paixão atua de forma estratégica para garantir a máxima proteção jurídica aos seus constituintes.</p>
+                <p>O escritório compreende que cada caso é único. Por isso, o compromisso central é entregar um <strong>atendimento altamente personalizado</strong>, traduzindo a complexidade das leis em soluções claras, ágeis e seguras para pessoas físicas e jurídicas.</p>
+                <p>Seja na advocacia preventiva — evitando litígios e prejuízos futuros —, ou no contencioso de alta complexidade, a atuação é focada em mitigar riscos e assegurar a defesa intransigente dos direitos dos clientes.</p>
             </div>
         </div>
     </section>
