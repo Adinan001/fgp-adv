@@ -72,115 +72,30 @@
         .indicator-item span { font-weight: 600; color: #1e293b; font-size: 1.05rem; }
 
         /* Seção Soluções Jurídicas */
-        .solutions-container {
-            padding: 6rem 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .solutions-header {
-            text-align: center;
-            margin-bottom: 4rem;
-        }
-        .solutions-header h2 {
-            font-size: 2.2rem;
-            color: #1e293b;
-            position: relative;
-            padding-bottom: 1rem;
-        }
-        .solutions-header h2::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 60px;
-            height: 3px;
-            background-color: #c5a880;
-        }
-        .solutions-header p {
-            color: #64748b;
-            margin-top: 1rem;
-            font-size: 1.1rem;
-        }
-        .solutions-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 2rem;
-        }
-        .solution-card {
-            background-color: #ffffff;
-            padding: 2.5rem 2rem;
-            border-radius: 6px;
-            border-top: 4px solid #1e293b;
-            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
-            transition: all 0.3s ease;
-        }
-        .solution-card:hover {
-            transform: translateY(-5px);
-            border-top-color: #c5a880;
-            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
-        }
-        .solution-icon {
-            color: #c5a880;
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-        }
-        .solution-card h3 {
-            font-size: 1.3rem;
-            color: #1e293b;
-            margin-bottom: 1rem;
-        }
-        .solution-card p {
-            color: #64748b;
-            font-size: 0.95rem;
-        }
+        .solutions-container { padding: 6rem 2rem; max-width: 1200px; margin: 0 auto; }
+        .solutions-header { text-align: center; margin-bottom: 4rem; }
+        .solutions-header h2 { font-size: 2.2rem; color: #1e293b; position: relative; padding-bottom: 1rem; }
+        .solutions-header h2::after { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 60px; height: 3px; background-color: #c5a880; }
+        .solutions-header p { color: #64748b; margin-top: 1rem; font-size: 1.1rem; }
+        .solutions-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; }
+        .solution-card { background-color: #ffffff; padding: 2.5rem 2rem; border-radius: 6px; border-top: 4px solid #1e293b; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); transition: all 0.3s ease; }
+        .solution-card:hover { transform: translateY(-5px); border-top-color: #c5a880; box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1); }
+        .solution-icon { color: #c5a880; font-size: 2rem; margin-bottom: 1.5rem; }
+        .solution-card h3 { font-size: 1.3rem; color: #1e293b; margin-bottom: 1rem; }
+        .solution-card p { color: #64748b; font-size: 0.95rem; }
 
         /* Seção Quem É */
-        .about-section {
-            background-color: #f1f5f9;
-            padding: 6rem 2rem;
-        }
-        .about-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 1.2fr;
-            gap: 4rem;
-            align-items: center;
-        }
-        .about-image {
-            position: relative;
-        }
-        .about-image img {
-            width: 100%;
-            max-width: 450px;
-            height: auto;
-            border-radius: 6px;
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
-            display: block;
-            margin: 0 auto;
-        }
-        .about-image::before {
-            content: '';
-            position: absolute;
-            top: -20px;
-            left: 20px;
-            width: 100%;
-            max-width: 450px;
-            height: 100%;
-            border: 3px solid #c5a880;
-            border-radius: 6px;
-            z-index: 0;
-            pointer-events: none;
-        }
-        .about-image img { position: relative; z-index: 1; }
-        
+        .about-section { background-color: #f1f5f9; padding: 6rem 2rem; }
+        .about-container { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1.2fr; gap: 4rem; align-items: center; }
+        .about-image { position: relative; }
+        .about-image img { width: 100%; max-width: 450px; height: auto; border-radius: 6px; box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); display: block; margin: 0 auto; position: relative; z-index: 1; }
+        .about-image::before { content: ''; position: absolute; top: -20px; left: 20px; width: 100%; max-width: 450px; height: 100%; border: 3px solid #c5a880; border-radius: 6px; z-index: 0; pointer-events: none; }
         .about-text h2 { font-size: 2.2rem; color: #1e293b; margin-bottom: 1.5rem; }
         .about-text .subtitle { color: #c5a880; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 0.5rem; display: block; }
         .about-text p { color: #475569; margin-bottom: 1.5rem; font-size: 1.05rem; }
         .about-text p strong { color: #1e293b; }
 
-        /* Seção Diferenciais (Por que escolher) */
+        /* Seção Diferenciais */
         .why-section { padding: 6rem 2rem; max-width: 1200px; margin: 0 auto; }
         .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
         .why-text h2 { font-size: 2.2rem; color: #1e293b; margin-bottom: 1.5rem; }
@@ -202,20 +117,58 @@
         .process-step h3 { font-size: 1.2rem; margin-bottom: 1rem; color: #ffffff; }
         .process-step p { color: #94a3b8; font-size: 0.95rem; }
 
+        /* Seção Artigos (SEO) */
+        .articles-section { padding: 6rem 2rem; max-width: 1200px; margin: 0 auto; }
+        .articles-header { text-align: center; margin-bottom: 4rem; }
+        .articles-header h2 { font-size: 2.2rem; color: #1e293b; position: relative; padding-bottom: 1rem; }
+        .articles-header h2::after { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 60px; height: 3px; background-color: #c5a880; }
+        .articles-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; }
+        .article-card { background: #ffffff; border-radius: 6px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); }
+        .article-img { width: 100%; height: 200px; background-color: #cbd5e1; object-fit: cover; }
+        .article-body { padding: 2rem; }
+        .article-tag { color: #c5a880; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; display: block; margin-bottom: 0.5rem; }
+        .article-body h3 { font-size: 1.25rem; color: #1e293b; margin-bottom: 1rem; }
+        .article-body p { color: #64748b; font-size: 0.95rem; margin-bottom: 1.5rem; }
+        .article-link { color: #1e293b; text-decoration: none; font-weight: 600; font-size: 0.95rem; display: inline-flex; align-items: center; gap: 0.5rem; transition: color 0.3s; }
+        .article-link:hover { color: #c5a880; }
+
+        /* Seção Contato */
+        .contact-section { background-color: #f1f5f9; padding: 6rem 2rem; }
+        .contact-container { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1.2fr; gap: 4rem; }
+        .contact-info h2 { font-size: 2.2rem; color: #1e293b; margin-bottom: 1.5rem; }
+        .contact-info p { color: #64748b; margin-bottom: 2.5rem; font-size: 1.05rem; }
+        .contact-details { display: flex; flex-direction: column; gap: 2rem; }
+        .contact-item { display: flex; gap: 1rem; align-items: flex-start; }
+        .contact-item i { color: #c5a880; font-size: 1.4rem; background: #ffffff; padding: 0.8rem; border-radius: 4px; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); }
+        .contact-item h4 { font-size: 1.1rem; color: #1e293b; margin-bottom: 0.2rem; }
+        .contact-item p { color: #64748b; font-size: 0.95rem; margin-bottom: 0; }
+        .contact-map { width: 100%; height: 100%; min-height: 350px; border-radius: 6px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05); }
+        .contact-map iframe { width: 100%; height: 100%; border: 0; min-height: 350px; }
+
+        /* Rodapé */
+        .footer { background-color: #0f172a; color: #94a3b8; padding: 4rem 2rem 2rem 2rem; border-top: 4px solid #c5a880; }
+        .footer-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 2rem; border-bottom: 1px solid #334155; padding-bottom: 2rem; margin-bottom: 2rem; }
+        .footer-logo h3 { color: #ffffff; font-size: 1.4rem; margin-bottom: 0.2rem; }
+        .footer-logo span { color: #c5a880; font-size: 0.9rem; letter-spacing: 1px; }
+        .footer-nav a { color: #94a3b8; text-decoration: none; margin-left: 2rem; transition: color 0.3s; font-size: 0.95rem; }
+        .footer-nav a:hover { color: #ffffff; }
+        .footer-copy { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; font-size: 0.85rem; }
+
         /* Responsividade Celular */
         @media (max-width: 768px) {
             .hero-content { grid-template-columns: 1fr; gap: 2.5rem; text-align: center; }
             .hero-text h1 { font-size: 2.2rem; }
             .indicators-grid { grid-template-columns: 1fr; gap: 1.5rem; }
-            .solutions-container { padding: 4rem 1rem; }
-            .solutions-header h2 { font-size: 1.8rem; }
-            .about-container { grid-template-columns: 1fr; gap: 3rem; text-align: center; }
-            .about-text h2 { font-size: 1.8rem; }
+            .solutions-container, .about-section, .why-section, .process-section, .articles-section, .contact-section { padding: 4rem 1rem; }
+            .solutions-header h2, .about-text h2, .why-text h2, .process-header h2, .articles-header h2, .contact-info h2 { font-size: 1.8rem; }
+            .about-container, .why-grid, .contact-container { grid-template-columns: 1fr; gap: 3rem; }
             .about-image::before { display: none; }
-            .why-grid { grid-template-columns: 1fr; gap: 3rem; }
-            .why-text h2 { font-size: 1.8rem; text-align: center; }
-            .process-section { padding: 4rem 1rem; }
-            .process-header h2 { font-size: 1.8rem; }
+            .why-text h2 { text-align: center; }
+            .why-features { margin-top: 0 !important; }
+            .contact-map { min-height: 300px; }
+            .footer-container { flex-direction: column; text-align: center; }
+            .footer-nav a { margin: 0 1rem; display: inline-block; }
+            .footer-copy { flex-direction: column; text-align: center; }
         }
     </style>
 </head>
@@ -269,63 +222,46 @@
         </div>
         
         <div class="solutions-grid">
-            <!-- 1. Direito Empresarial -->
             <div class="solution-card">
                 <div class="solution-icon"><i class="fa-solid fa-briefcase"></i></div>
                 <h3>Direito Empresarial</h3>
                 <p>Assessoria consultiva e contenciosa para empresas, contratos comerciais, estruturação societária e proteção do negócio.</p>
             </div>
-
-            <!-- 2. Direito Civil -->
             <div class="solution-card">
                 <div class="solution-icon"><i class="fa-solid fa-gavel"></i></div>
                 <h3>Direito Civil</h3>
                 <p>Resolução de disputas, contratos, responsabilidade civil, direitos de propriedade e assessoria em relações civis em geral.</p>
             </div>
-
-            <!-- 3. Direito do Consumidor -->
             <div class="solution-card">
                 <div class="solution-icon"><i class="fa-solid fa-cart-shopping"></i></div>
                 <h3>Direito do Consumidor</h3>
-                <p>Defesa dos direitos em relações de consumo, práticas abusivas, indenizações e cumprimento de contratos de prestação de serviços.</p>
+                <p>Defesa dos direitos em relações de consumo, práticas abusivas, indenizaciones e cumprimento de contratos de prestação de serviços.</p>
             </div>
-
-            <!-- 4. Direito do Trabalho -->
             <div class="solution-card">
                 <div class="solution-icon"><i class="fa-solid fa-user-tie"></i></div>
                 <h3>Direito do Trabalho</h3>
-                <p>Atuação focada na defense de direitos trabalhistas, compliance patronal preventivo e representação em litígios judiciais.</p>
+                <p>Atuação focada na defesa de direitos trabalhistas, compliance patronal preventivo e representação em litígios judiciais.</p>
             </div>
-
-            <!-- 5. Direito Penal -->
             <div class="solution-card">
                 <div class="solution-icon"><i class="fa-solid fa-shield-halved"></i></div>
                 <h3>Direito Penal</h3>
                 <p>Defesa criminal técnica e estratégica, acompanhamento em inquéritos policiais e processos em todas as instâncias.</p>
             </div>
-
-            <!-- 6. Direito Militar -->
             <div class="solution-card">
                 <div class="solution-icon"><i class="fa-solid fa-person-military-pointing"></i></div>
                 <h3>Direito Militar</h3>
                 <p>Assessoria jurídica especializada para militares, envolvendo processos disciplinares, promoções e defesas administrativas ou judiciais.</p>
             </div>
-
-            <!-- 7. Habeas Corpus -->
             <div class="solution-card">
                 <div class="solution-icon"><i class="fa-solid fa-unlock-keyhole"></i></div>
                 <h3>Habeas Corpus</h3>
                 <p>Medidas urgentes e eficazes para a proteção e garantia da liberdade de locomoção contra atos ilegais ou abusos de poder.</p>
             </div>
-
-            <!-- 8. Recursos e Sustentações Orais -->
             <div class="solution-card">
                 <div class="solution-icon"><i class="fa-solid fa-building-columns"></i></div>
                 <h3>Recursos e Sustentações Orais</h3>
                 <p>Atuação perante os Tribunais, com elaboração de recursos complexos e defesas orais estratégicas para reverter ou manter decisões.</p>
             </div>
-
-            <!-- 9. Consultoria Jurídica -->
             <div class="solution-card">
                 <div class="solution-icon"><i class="fa-solid fa-comments"></i></div>
                 <h3>Consultoria Jurídica</h3>
@@ -424,6 +360,89 @@
             </div>
         </div>
     </section>
+
+    <!-- SEÇÃO ARTIGOS JURÍDICOS (SEO) -->
+    <section class="articles-section">
+        <div class="articles-header">
+            <h2>Artigos Jurídicos</h2>
+            <p>Informações relevantes e análises sobre o cenário jurídico para manter você sempre atualizado.</p>
+        </div>
+        <div class="articles-grid">
+            <div class="article-card">
+                <img src="https://images.unsplash.com/photo-1450133064473-71024230f91b?auto=format&fit=crop&q=80&w=500" alt="Contratos Empresariais" class="article-img">
+                <div class="article-body">
+                    <span class="article-tag">Empresarial</span>
+                    <h3>A Importância da Advocacia Preventiva nas Empresas</h3>
+                    <p>Entenda como uma consultoria minuciosa mitiga riscos trabalhistas, contratuais e societários, economizando tempo e recursos.</p>
+                    <a href="https://wa.me/SEUNUMERODOWHATSAPP" target="_blank" class="article-link">Ler artigo completo <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="article-card">
+                <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&q=80&w=500" alt="Direito de Defesa" class="article-img">
+                <div class="article-body">
+                    <span class="article-tag">Penal / Processual</span>
+                    <h3>Recursos e Tribunais: A Força da Sustentação Oral</h3>
+                    <p>Saiba por que a presença combativa do advogado de defesa nos tribunais de segunda instância faz toda a diferença para reverter decisões.</p>
+                    <a href="https://wa.me/SEUNUMERODOWHATSAPP" target="_blank" class="article-link">Ler artigo completo <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO CONTATO -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Fale Conosco</h2>
+                <p>Estamos prontos para atender sua demanda com o sigilo, a pressa e o rigor técnico que o seu caso exige.</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <h4>Telefone / WhatsApp</h4>
+                            <p>(11) 99999-9999</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <h4>E-mail</h4>
+                            <p>contato@fpadvocacia.com.br</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <h4>Endereço</h4>
+                            <p>Atendimento Presencial e Digital para todo o Brasil</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-map">
+                <!-- Mapa Padrão de São Paulo (Você poderá substituir com o seu endereço depois) -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.065830006454!2d-46.6559144246695!3d-23.566061178795558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f943179a9777!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h3>FABRÍCIO GOMES PAIXÃO</h3>
+                <span>ADVOCACIA E CONSULTORIA JURÍDICA</span>
+            </div>
+            <div class="footer-nav">
+                <!-- Links institucionais caso queira criar âncoras depois -->
+                <p style="color: #64748b; font-size: 0.9rem;">OAB/SP 275.676</p>
+            </div>
+        </div>
+        <div class="footer-copy">
+            <p>&copy; 2026 Fabrício Gomes Paixão Advocacia. Todos os direitos reservados.</p>
+            <p>Desenvolvido com foco em Proteção e Defesa Estratégica.</p>
+        </div>
+    </footer>
 
 </body>
 </html>
