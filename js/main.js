@@ -1,5 +1,11 @@
+/* ========================================
+   FABRÍCIO GOMES PAIXÃO — ADVOCACIA
+   Scripts
+   ======================================== */
+
 document.addEventListener('DOMContentLoaded', () => {
 
+  // --- Navbar: sombra ao scrollar ---
   const navbar = document.querySelector('.navbar');
   const onScroll = () => {
     navbar.classList.toggle('scrolled', window.scrollY > 40);
@@ -7,6 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
+  // --- Mobile: hamburger toggle ---
   const toggle = document.querySelector('.navbar-toggle');
   const menu = document.querySelector('.navbar-links');
 
@@ -17,6 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     toggle.setAttribute('aria-expanded', String(!expanded));
   });
 
+  // Fecha menu ao clicar em um link
   menu.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
       toggle.classList.remove('open');
@@ -25,6 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // --- Active link no scroll (IntersectionObserver) ---
   const sections = document.querySelectorAll('main section[id]');
   const navLinks = document.querySelectorAll('.navbar-links a');
 
