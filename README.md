@@ -77,4 +77,4 @@ cd fgp-adv
 
 Este projeto está sob licença MIT.
 
-Desenvolvido por **[Adinan Lima — MMG Soluções](https://github.com/Adinan001)**
+Desenvolvido por **[Adinan Lima](https://github.com/Adinan001)**
